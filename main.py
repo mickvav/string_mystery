@@ -13,7 +13,7 @@ def generateString(n: int) -> str:
             res += c
     return res
 
-for i in range(1,6):
+for i in range(1,7):
     iterations = 10**i
     n=time.time()
     generateString(iterations)

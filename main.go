@@ -20,7 +20,7 @@ func generateString(n int) string {
 }
 
 func main() {
-	for i := 1; i < 6; i++ {
+	for i := 1; i < 7; i++ {
 		iterations := intPow(10, i)
 		start := time.Now()
 		generateString(iterations)

@@ -1,4 +1,5 @@
 all: pyresult.txt goresult.txt
+	gnuplot plot.plt
 
 pyresult.txt: main.py
 	python3 main.py > pyresult.txt
