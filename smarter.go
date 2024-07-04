@@ -3,20 +3,24 @@ package main
 import (
 	"fmt"
 	"time"
+	"strings"
 )
 
 func generateString(n int) string {
-	res := ""
-	b := ""
+	var bbuf strings.Builder
+	bbuf.Grow(n*2)
 	for i := 0; i < n; i++ {
-		b += "12"
+		fmt.Fprintf(&bbuf, "12")
 	}
+	b:=bbuf.String()
+	var resbuf strings.Builder
+	resbuf.Grow(n)
 	for _, c := range b {
 		if c == '1' {
-			res += string(c)
+			fmt.Fprintf(&resbuf, string(c))
 		}
 	}
-	return res
+	return resbuf.String()
 }
 
 func main() {

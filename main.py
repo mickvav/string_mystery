@@ -8,7 +8,7 @@ def generateString(n: int) -> str:
     b = ""
     for i in range(n):
         b += "12"
-    for c in res:
+    for c in b:
         if c == "1":
             res += c
     return res
