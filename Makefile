@@ -1,4 +1,4 @@
-all: pyresult.txt goresult.txt
+all: pyresult.txt goresult.txt plot.plt
 	gnuplot plot.plt
 
 pyresult.txt: main.py
